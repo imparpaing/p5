@@ -3,8 +3,23 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(225, 75, 115);
 
-  // Rectangle (X, Y, width, height)
-  rect(99, 99, 200, 200);
+  ellipseMode(CENTER);
+  rectMode(CENTER);
+
+  // Head
+  ellipse(175, 225, 120, 400);
+
+  // Eyes
+  ellipse(150, 125, 30, 40);
+  ellipse(200, 125, 30, 55);
+
+  // Pupils
+  circle(153, 133, 20);
+  circle(195, 136, 23);
+
+  // Lips
+  // rect(175, 350, 45, 15, 30);
+  ellipse(175, 333, 45, 40);
 }
